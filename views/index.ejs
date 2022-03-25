@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Express</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	body{
+		background: rgb(240, 194, 109);
+	}
+	.row{
+		background: white;
+		border-radius: 25px;
+		box-shadow: 12px 1px 22px gray;
+	}
+	img{
+		
+    max-height: 100%;
+	}
+	.btn1{
+		border: none;
+		outline: none;
+		height: 50px;
+		width: 100%;
+		background-color: black;
+		color: white;
+		border-radius: 4px;
+		font-weight: bold;
+	}
+	.btn1:hover{
+		background: white;
+		border: 1px solid;
+		color: black;
+
+	}
+  
+</style>
+<body>
+  
+<section>
+  <nav class="navbar navbar-dark navbar-expand-sm" style="background-color:rgb(214, 178, 112);">
+    <div class="container-fluid">
+    <a href="/" class="navbar-brand">
+    </a>
+    
+    
+  <p class="d-flex" style="font-size: 1.5rem; color: black;">You are not logged in. (Log in)</p>
+  
+  </nav>
+<section class="form my-4 mx-5">
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-lg-5">
+				<img src="https://womens-journal.com/wp-content/uploads/2020/08/cyber-4610993_1280.jpg"
+             class="img-fluid">
+			</div>
+			<div class="col-lg-7 px-5 pt-5">
+				 <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                        <span class="h1 fw-bold mb-0">Login</span><br><br>
+                        <% if(msg !=''){ %>
+                          <p style="text-align: center; text-overflow: clip;">
+                            <%= msg %></p>
+                          <% } %>
+			<form action="/" method="post">
+       
+			<div class="form-row">
+				<div class="col-lg-6">
+					<label class="form-label" for="form2Example17">Email address</label>
+					 <input type="email" name="em" id="form2Example17" class="form-control my-2 p-2" placeholder="E-mail Address" />
+                        
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-lg-6">
+					<label class="form-label" for="form2Example27">Password</label>
+					<input type="password" name="pa" id="form2Example27" class="form-control my-2 p-2" placeholder="Password" />
+                        
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-lg-6">
+					<button class="btn1 mt-3 mb-5" type="submit">Login</button>
+				</div>
+			</div>
+			<b><p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="/form" style="color: #393f81;">Register here</a></p></b>
+                      <a href="#!" class="small text-muted">Terms of use.</a>
+                      <a href="#!" class="small text-muted">Privacy policy</a>
+		</form>
+		</div>
+	</div>
+	</div>
+</section>
+    
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>&nbsp;
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>&nbsp;
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>&nbsp;
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>&nbsp;
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>&nbsp;
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>&nbsp;
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>bhatnagars Enterprise
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> gwalior mp India</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            myinfo@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +91 9926415203</p>
+          <p><i class="fas fa-print me-3"></i>  0751 234 5678</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright| Puneet bhatnagar
+    
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>

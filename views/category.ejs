@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  
+
+
+</head>
+ <style>
+
+
+   .nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+
+    text-decoration: none;
+    font-family: 'roboto',sans-serif;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: #000;
+
+}
+@media (max-width: 576px) {
+    .collapse navbar-collapse{
+        padding: 50px 20px;
+    }
+
+    .collapse navbar-collapse{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+ </style>
+
+<script>
+  function show(){
+    alert('submit')
+  }
+
+</script>
+  <body style="margin: 0%; padding: 0; background-color: wheat;">
+
+<section>
+<nav class="navbar navbar-dark navbar-expand-sm bg-light ">
+  <div class="container">
+  <a href="/" class="navbar-brand">
+  
+    <h5 style="color:rgb(10, 10, 94);">Password Management System</h5></a>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div id="navbarCollapse" class="d-flex">
+  <ul class="navbar-nav">
+    
+      <li class="nav-item">
+          <a href="/home" class="nav-link active" style="color: rgb(10, 10, 94);">
+              Home
+          </a>
+      </li>
+      <li class="nav-item">
+          <a href="" class="nav-link active"  style="color: rgb(10, 10, 94);">
+              Blog
+          </a>
+      </li>
+      <li class="nav-item">
+          <a href="" class="nav-link active"  style="color: rgb(10, 10, 94);">
+              About
+          </a>
+      </li>
+    
+  
+      
+  </ul>
+  
+  </div>
+
+</div>
+</nav>
+<section class="h-100 h-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+            
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">ADD CATEGORY</h3>
+  
+              <form class="px-md-2" method="post" action="/info" enctype="multipart/form-data">
+  
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1q" name="na" class="form-control" />
+                  <label class="form-label" for="form3Example1q"> Password Details</label>
+                </div>
+
+             
+
+                <div class="form-outline mb-4">
+                    <input type="file" name="file" class="form-control" />
+                    <label class="form-label" for="form3Example1q">Image</label>
+                  </div>
+  
+               
+  
+  
+                <button type="submit" onclick="show()" class="btn btn-primary btn-lg mb-1">ADD Password</button>
+                
+  
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<br>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+<!-- Section: Social media -->
+<section
+class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+>
+<!-- Left -->
+<div class="me-5 d-none d-lg-block">
+<span>Get connected with us on social networks:</span>
+</div>
+<!-- Left -->
+
+<!-- Right -->
+<div>
+<a href="" class="me-4 text-reset">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="" class="me-4 text-reset">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="" class="me-4 text-reset">
+<i class="fab fa-google"></i>
+</a>
+<a href="" class="me-4 text-reset">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="" class="me-4 text-reset">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href="" class="me-4 text-reset">
+<i class="fab fa-github"></i>
+</a>
+</div>
+<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+<!-- Grid column -->
+<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+<!-- Content -->
+<h6 class="text-uppercase fw-bold mb-4">
+<i class="fas fa-gem me-3"></i>Company name
+</h6>
+<p>
+Here you can use rows and columns to organize your footer content. Lorem ipsum
+dolor sit amet, consectetur adipisicing elit.
+</p>
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+<!-- Links -->
+<h6 class="text-uppercase fw-bold mb-4">
+Products
+</h6>
+<p>
+<a href="#!" class="text-reset">Angular</a>
+</p>
+<p>
+<a href="#!" class="text-reset">React</a>
+</p>
+<p>
+<a href="#!" class="text-reset">Vue</a>
+</p>
+<p>
+<a href="#!" class="text-reset">Laravel</a>
+</p>
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+<!-- Links -->
+<h6 class="text-uppercase fw-bold mb-4">
+Useful links
+</h6>
+<p>
+<a href="#!" class="text-reset">Pricing</a>
+</p>
+<p>
+<a href="#!" class="text-reset">Settings</a>
+</p>
+<p>
+<a href="#!" class="text-reset">Orders</a>
+</p>
+<p>
+<a href="#!" class="text-reset">Help</a>
+</p>
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+<!-- Links -->
+<h6 class="text-uppercase fw-bold mb-4">
+Contact
+</h6>
+<p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+<p>
+<i class="fas fa-envelope me-3"></i>
+info@example.com
+</p>
+<p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+<p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+</div>
+<!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+© 2022 Copyright|Puneet bhatnagar
+
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
